@@ -19,12 +19,6 @@ if(!function_exists('medinovatheme')){
     add_theme_support( 'automatic-feed-links' );
 
 
-    register_nav_menus( array(
-        'primary' => __('Primary Menu', 'classicmedinova'),
-        'secondary' => __('Secondary Menu', 'classicmedinova')
-    ) );
-
-
         if(!function_exists('medinovathemescript')){
 
             function medinovathemescript(){
@@ -91,7 +85,18 @@ if(!function_exists('medinovatheme')){
 
     }
 
-} 
+}
+
+if(!function_exists('mymenu')){
+    function mymenu(){
+        register_nav_menus( array(
+            'primary' => __('Primary Menu', 'classicmedinova'),
+            'secondary' => __('Secondary Menu', 'classicmedinova')
+        ) );
+    }
+}
+
+add_action('init','mymenu');
 
 
 ?>
