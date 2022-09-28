@@ -79,6 +79,14 @@ if(!function_exists('medinovatheme')){
             
             }
 
+            function atg_menu_classes($classes, $item, $args){
+                if($args->theme_location == 'primary'){
+                    $classes[] = 'nav-item nav-link';
+                }
+                return $classes;
+            }
+            add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+
         }
 
         add_action( 'wp_enqueue_scripts', 'medinovathemescript' );

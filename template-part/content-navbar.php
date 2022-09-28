@@ -10,30 +10,41 @@
 
 
                 <?php
-                    wp_nav_menu(array('theme_location' => 'primary'));
+                    // wp_nav_menu(array('theme_location' => 'primary'));
                 ?>
 
 
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="<?php echo get_template_directory_uri().'/about.html';?>" class="nav-item nav-link">About</a>
-                        <a href="service.html" class="nav-item nav-link">Service</a>
-                        <a href="price.html" class="nav-item nav-link">Pricing</a>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                            <div class="dropdown-menu m-0">
-                                <a href="blog.html" class="dropdown-item">Blog Grid</a>
-                                <a href="detail.html" class="dropdown-item">Blog Detail</a>
-                                <a href="team.html" class="dropdown-item">The Team</a>
-                                <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                                <a href="appointment.html" class="dropdown-item">Appointment</a>
-                                <a href="search.html" class="dropdown-item">Search</a>
-                            </div>
-                        </div>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'primary',
+                        'menu_class' => 'navbar-nav ms-auto py-0'
+                    ));
+                ?>
+                    <!-- <ul class="navbar-nav ms-auto py-0">
+                            <li class="nav-item">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            </li>
+                            <li class="nav-item">
+                            <a href="price.html" class="nav-item nav-link">Pricing</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Blog Grid</a></li>
+                                <li><a class="dropdown-item" href="#">Blog Detail</a></li>
+                                <li><a class="dropdown-item" href="#"> Testimonial</a></li>
+                                <li><a class="dropdown-item" href="#">Appointment</a></li>
+                                
+                                <li><a class="dropdown-item" href="#">The Team</a></li>
+                    </ul> -->
                 </div>
             </nav>
         </div>
