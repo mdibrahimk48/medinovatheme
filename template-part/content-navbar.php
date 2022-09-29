@@ -8,13 +8,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-
-                <?php
-                    // wp_nav_menu(array('theme_location' => 'primary'));
-                ?>
-
-
-
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                 <?php
                     wp_nav_menu(array(
