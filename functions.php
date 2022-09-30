@@ -82,11 +82,10 @@ if(!function_exists('medinovatheme')){
 
             //Menu Class Function
             function add_menuclass($ulclass){
-                return preg_replace('/<a /', '<a class="nav-item nav-link"', $ulclass);
+                return preg_replace('/<a /', '<a class="nav-link"', $ulclass);
             }
-            add_filter('wp_nav_menu', 'add_menuclass');
+            add_filter('wp_nav_menu', 'add_menuclass'); 
         }
-
 
         add_action( 'wp_enqueue_scripts', 'medinovathemescript' );
 
