@@ -7,6 +7,15 @@
             <div class="row g-5">
 
             <?php
+                $user = wp_get_current_user();
+
+                if ( $user):
+                    $user_img = esc_url( get_avatar_url( $user->ID ) );
+                endif; 
+            ?>
+
+            <?php
+
                 if (have_posts()):
                     while (have_posts()) : the_post();
                         $image_url = get_the_post_thumbnail_url(get_the_ID(),'medium');
@@ -21,7 +30,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between border-top p-4">
                                     <div class="d-flex align-items-center">
-                                        <img class="rounded-circle me-2" src="<?php echo get_theme_file_uri('img/user.jpg');?>" width="25" height="25" alt="">
+                                        <img class="rounded-circle me-2" src="<?php echo $user_img; ?>" width="25" height="25" alt="">
                                         <small><?php the_author(); ?></small>
                                     </div>
                                     <div class="d-flex align-items-center">
