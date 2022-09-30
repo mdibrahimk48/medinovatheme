@@ -7,18 +7,20 @@
             <div class="row g-5">
 
             <?php
-                $user = wp_get_current_user();
+            //Author Image
+            $user = wp_get_current_user();
 
-                if ( $user):
-                    $user_img = esc_url( get_avatar_url( $user->ID ) );
-                endif; 
-            ?>
+            if ( $user):
+                $user_img = esc_url( get_avatar_url( $user->ID ) );
+            endif; 
 
-            <?php
-
+            //Blog Post
                 if (have_posts()):
                     while (have_posts()) : the_post();
-                        $image_url = get_the_post_thumbnail_url(get_the_ID(),'medium');
+                        $image_url = get_the_post_thumbnail_url(get_the_ID());
+
+                        //Post View Counter (single.php)
+                        gt_set_post_view();
                     ?>
 
                         <div class="col-xl-4 col-lg-6">
@@ -34,8 +36,8 @@
                                         <small><?php the_author(); ?></small>
                                     </div>
                                     <div class="d-flex align-items-center">
-                                        <small class="ms-3"><i class="far fa-eye text-primary me-1"></i>12345</small>
-                                        <small class="ms-3"><i class="far fa-comment text-primary me-1"></i>123</small>
+                                        <small class="ms-3"><i class="far fa-eye text-primary me-1"></i><?= gt_get_post_view(); ?></small>
+                                        <small class="ms-3"><i class="far fa-comment text-primary me-1"></i><?php echo get_comments_number(); ?></small>
                                     </div>
                                 </div>
                             </div>

@@ -19,6 +19,9 @@
 		.navbar-expand-lg .navbar-collapse {
             display: grid !important; 
             justify-content: end !important
+        }
+        .w-100 {
+            height: 300px!important;
         }		
     </style>
 </head>
