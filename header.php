@@ -13,4 +13,12 @@
 
 
     <?php wp_head(); ?>
+
+
+    <style id="wp-custom-css">
+		.navbar-expand-lg .navbar-collapse {
+            display: grid !important; 
+            justify-content: end !important
+        }		
+    </style>
 </head>

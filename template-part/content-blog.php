@@ -9,12 +9,12 @@
             <?php
                 if (have_posts()):
                     while (have_posts()) : the_post();
-
+                        $image_url = get_the_post_thumbnail_url(get_the_ID(),'medium');
                     ?>
 
                         <div class="col-xl-4 col-lg-6">
                             <div class="bg-light rounded overflow-hidden">
-                                <img class="img-fluid w-100" src="<?php echo get_theme_file_uri('img/blog-1.jpg');?>" alt="">
+                                <img class="img-fluid w-100" src="<?php echo $image_url; ?>" alt="">
                                 <div class="p-4">
                                     <a class="h3 d-block mb-3" href=""><?php the_title(); ?></a>
                                     <p class="m-0"><?php the_content(); ?></p>
