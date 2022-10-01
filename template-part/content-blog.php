@@ -16,8 +16,15 @@
 
             //Blog Post
                 if (have_posts()):
+                    $image_url;
                     while (have_posts()) : the_post();
+                    // Image Location.
+                    if ( has_post_thumbnail() ) {
                         $image_url = get_the_post_thumbnail_url(get_the_ID());
+                    }
+                    else {
+                        $image_url = get_bloginfo('stylesheet_directory') .'/img/about.jpg"';
+                    }
 
                         //Post View Counter (single.php)
                         gt_set_post_view();
