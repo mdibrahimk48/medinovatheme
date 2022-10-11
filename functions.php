@@ -134,14 +134,21 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 if(!function_exists('mymedicalservice')){
     function mymedicalservice(){
 
-        register_post_type('mdservice', 
-            array(
-                'labels' => array(
-                    'name'          => __('Medical Services', 'classicmedinova')
-                ),
-                'public' => true,
+        $labels = array(
+            'name'          => __('Medical Services', 'classicmedinova'),
+            'singular_name' => 'Test', 
+            'add_new_item'          => __('Add New Services', 'classicmedinova'),
+            'search_items'          => __('Search Services', 'classicmedinova'),
+            'all_items'          => __('All Services', 'classicmedinova'),
+            'not_found'          => __('No Services Found!', 'classicmedinova'),
+        );
 
-            ));
+        register_post_type('mdservice',
+                                array(
+                                    'labels'        => $labels,
+                                    'public'        => true,
+                                    'supports'      => array('title','editor','thumbnail'),
+                                ));
 
     }
     
