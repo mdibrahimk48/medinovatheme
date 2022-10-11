@@ -131,13 +131,13 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
 
 //Custom Post Type
-if(!function_exists('mymedicalservices')){
-    function mymedicalservices(){
+if(!function_exists('mymedicalservice')){
+    function mymedicalservice(){
 
         register_post_type('mdservice', 
             array(
                 'labels' => array(
-                    
+                    'name'          => __('Medical Services', 'classicmedinova')
                 ),
                 'public' => true,
 
@@ -147,6 +147,6 @@ if(!function_exists('mymedicalservices')){
     
 }
 
-add_action( 'init', 'mymedicalservices' );
+add_action('init', 'mymedicalservice');
 
 ?>
