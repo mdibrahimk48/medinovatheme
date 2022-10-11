@@ -41,8 +41,8 @@ if(!function_exists('medinovatheme')){
 
 
                 // <!-- Library Link --> 
-                wp_enqueue_style( 'library1', get_template_directory_uri() . '/lib/owlcarousel/assets/owl.carousel.min.css', array(), null, 'all');
-                wp_enqueue_style( 'library2', get_template_directory_uri() . '/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css', array(), null, 'all');
+                wp_enqueue_style( 'library1', get_template_directory_uri() .'/lib/owlcarousel/assets/owl.carousel.min.css', array(), null, 'all');
+                wp_enqueue_style( 'library2', get_template_directory_uri() .'/lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css', array(), null, 'all');
 
 
                 // <!-- Customized Bootstrap Stylesheet -->
