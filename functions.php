@@ -143,12 +143,14 @@ if(!function_exists('mymedicalservice')){
             'not_found'          => __('No Services Found!', 'classicmedinova'),
         );
 
-        register_post_type('mdservice',
-                                array(
-                                    'labels'        => $labels,
-                                    'public'        => true,
-                                    'supports'      => array('title','editor','thumbnail'),
-                                ));
+        $arg = array(
+            'labels'        => $labels,
+            'public'        => true,
+            'supports'      => array('title','editor','thumbnail'),
+            'menu_position' => 66,
+            'menu_icon'     => 'dashicons-portfolio',
+        );
+        register_post_type('mdservice', $arg);
 
     }
     
