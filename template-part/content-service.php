@@ -25,7 +25,12 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="service-icon mb-4">
-                            <i class="fa fa-2x fa-user-md text-white"></i>
+                            <?php
+                                $postid = $the_query->post->ID;
+
+                                $icon_class = get_post_meta($postid, 'icon_class_name', true);
+                            ?>
+                            <i class="<?php echo $icon_class; ?>"></i>
                         </div>
                         <h4 class="mb-3"><?php the_title(); ?></h4>
                         <p class="m-0"><?php the_content(); ?></p>
