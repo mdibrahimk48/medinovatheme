@@ -7,52 +7,54 @@
             <div class="row g-5">
 
             <?php
-            // the query
 
-            $args = array(
-                'post_type' => 'mdservice'
-            );
+            // the query (for Post Loop)
 
-            $the_query = new WP_Query( $args ); ?>
+                $args = array(
+                    'post_type' => 'mdservice'
+                );
 
-            <?php if ( $the_query->have_posts() ) : ?>
+                $the_query = new WP_Query( $args ); ?>
 
-                <!-- pagination here -->
+                <?php if ( $the_query->have_posts() ) : ?>
 
-                <!-- the loop -->
-                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    <!-- pagination here -->
 
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon mb-4">
-                            <?php
-                                $postid = $the_query->post->ID;
+                    <!-- the loop -->
+                    <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 
-                                $icon_class = get_post_meta($postid, 'icon_class_name', true);
-                            ?>
-                            <i class="<?php echo $icon_class; ?>"></i>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                            <div class="service-icon mb-4">
+                                <?php
+                                    $postid = $the_query->post->ID;
+
+                                    $icon_class = get_post_meta($postid, 'icon_class_name', true);
+                                ?>
+                                <i class="<?php echo $icon_class; ?>"></i>
+                            </div>
+                            <h4 class="mb-3"><?php the_title(); ?></h4>
+                            <p class="m-0"><?php the_content(); ?></p>
+                            <a class="btn btn-lg btn-primary rounded-pill" href="">
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
                         </div>
-                        <h4 class="mb-3"><?php the_title(); ?></h4>
-                        <p class="m-0"><?php the_content(); ?></p>
-                        <a class="btn btn-lg btn-primary rounded-pill" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
                     </div>
-                </div>
 
-                    
-                <?php endwhile; ?>
-                <!-- end of the loop -->
+                        
+                    <?php endwhile; ?>
+                    <!-- end of the loop -->
 
-                <!-- pagination here -->
+                    <!-- pagination here -->
 
-                <?php wp_reset_postdata(); ?>
+                    <?php wp_reset_postdata(); ?>
 
-            <?php else : ?>
-                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-            <?php endif; ?>
-
-
+                <?php else : ?>
+                    <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+                <?php endif; 
+            // End the query (for Post Loop) 
+            
+            ?>
                 
                 <!-- <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
