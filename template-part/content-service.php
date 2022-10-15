@@ -5,6 +5,30 @@
                 <h1 class="display-4">Excellent Medical Services</h1>
             </div>
             <div class="row g-5">
+
+            <?php
+            // the query
+            $the_query = new WP_Query( $args ); ?>
+
+            <?php if ( $the_query->have_posts() ) : ?>
+
+                <!-- pagination here -->
+
+                <!-- the loop -->
+                <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+                    <h2><?php the_title(); ?></h2>
+                <?php endwhile; ?>
+                <!-- end of the loop -->
+
+                <!-- pagination here -->
+
+                <?php wp_reset_postdata(); ?>
+
+            <?php else : ?>
+                <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+            <?php endif; ?>
+            
+
                 <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="service-icon mb-4">
@@ -17,7 +41,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
+                <!-- <div class="col-lg-4 col-md-6">
                     <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
                         <div class="service-icon mb-4">
                             <i class="fa fa-2x fa-procedures text-white"></i>
@@ -76,7 +100,7 @@
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
