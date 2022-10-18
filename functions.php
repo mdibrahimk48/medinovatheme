@@ -130,7 +130,8 @@ add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
 
-//Custom Post 
-require_once('custom-functions/custom-post.php');
+// Custom Post 
+require_once('inc/custom-post.php');
+require_once('inc/custom-shortcodes.php');
 
 ?>
