@@ -28,6 +28,7 @@
 
                         //Post View Counter (single.php)
                         gt_set_post_view();
+                        
                     ?>
 
                         <div class="col-xl-4 col-lg-6">
