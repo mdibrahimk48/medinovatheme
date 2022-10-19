@@ -36,7 +36,7 @@ function create_testimonial_cpt() {
 		'label' => __( 'Testimonial', 'classicmedinova' ),
 		'description' => __( '', 'classicmedinova' ),
 		'labels' => $labels,
-		'menu_icon' => '',
+		'menu_icon' => 'dashicons-format-aside',
 		'supports' => array('title', 'editor', 'thumbnail', 'author', 'post-formats', 'custom-fields'),
 		'taxonomies' => array(),
 		'public' => true,
