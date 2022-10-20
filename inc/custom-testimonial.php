@@ -42,7 +42,7 @@ function create_testimonial_cpt() {
 		'public' => true,
 		'show_ui' => true,
 		'show_in_menu' => true,
-		'menu_position' => 5,
+		'menu_position' => 7,
 		'show_in_admin_bar' => true,
 		'show_in_nav_menus' => true,
 		'can_export' => true,
