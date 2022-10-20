@@ -12,7 +12,7 @@ function create_testimonial_cpt() {
 		'attributes' => __( 'Testimonial Attributes', 'classicmedinova' ),
 		'parent_item_colon' => __( 'Parent Testimonial:', 'classicmedinova' ),
 		'all_items' => __( 'All Testimonials', 'classicmedinova' ),
-		'add_new_item' => __( 'Add New Testimonial', 'classicmedinova' ),
+		'add_new_item' => __( 'Add New Testimonial Name', 'classicmedinova' ),
 		'add_new' => __( 'Add New', 'classicmedinova' ),
 		'new_item' => __( 'New Testimonial', 'classicmedinova' ),
 		'edit_item' => __( 'Edit Testimonial', 'classicmedinova' ),
