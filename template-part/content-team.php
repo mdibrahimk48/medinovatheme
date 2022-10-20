@@ -31,35 +31,22 @@
                         }
                         
                         ?>
-
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="<?php echo $image_url; ?>" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4 fw-normal"><?php the_content(); ?></p>
-                            <hr class="w-25 mx-auto">
-                            <h3><?php the_title(); ?></h3>
-                                <?php
-                                    $postid = $the_query->post->ID;
-
-                                    $icon_class = get_post_meta($postid, 'profession', true);
-                                ?>
-                            <h6 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h6>
-                        </div>
                         <!-- HTML Code Design -->
                         <div class="team-item">
                             <div class="row g-0 bg-light rounded overflow-hidden">
                                 <div class="col-12 col-sm-5 h-100">
-                                    <img class="img-fluid h-100" src="<?php echo get_theme_file_uri('img/team-1.jpg');?>" style="object-fit: cover;">
+                                    <img class="img-fluid h-100" src="<?php echo $image_url; ?>" style="object-fit: cover;">
                                 </div>
                                 <div class="col-12 col-sm-7 h-100 d-flex flex-column">
                                     <div class="mt-auto p-4">
-                                        <h3>Doctor Name</h3>
-                                        <h6 class="fw-normal fst-italic text-primary mb-4">Cardiology Specialist</h6>
-                                        <p class="m-0">Dolor lorem eos dolor duo eirmod sea. Dolor sit magna rebum clita rebum dolor</p>
+                                        <h3><?php the_title(); ?></h3>
+                                        <?php
+                                            $postid = $the_query->post->ID;
+
+                                            $profession = get_post_meta($postid, 'profession', true);
+                                        ?>
+                                        <h6 class="fw-normal fst-italic text-primary mb-4"><?php echo $profession; ?></h6>
+                                        <p class="m-0"><?php the_content(); ?></p>
                                     </div>
                                     <div class="d-flex mt-auto border-top p-4">
                                         <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
