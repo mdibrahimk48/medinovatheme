@@ -16,7 +16,7 @@ if(!function_exists('mymedicalservice')){
             'labels'                => $labels,
             'public'                => true,
             'supports'              => array('title','editor','thumbnail','custom-fields'),
-            'menu_position'         => 6,
+            'menu_position'         => 5,
             'menu_icon'             => 'dashicons-portfolio',
         );
         register_post_type('mdservice', $arg);
