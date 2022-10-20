@@ -36,7 +36,7 @@ function create_customteam_cpt() {
 		'label' => __( 'Custom Team', 'classicmedinova' ),
 		'description' => __( '', 'classicmedinova' ),
 		'labels' => $labels,
-		'menu_icon' => '',
+		'menu_icon' => 'dashicons-plus',
 		'supports' => array('title', 'editor', 'thumbnail', 'author', 'post-formats', 'custom-fields'),
 		'taxonomies' => array(),
 		'public' => true,
