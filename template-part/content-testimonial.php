@@ -22,7 +22,7 @@
                         <!-- pagination here -->
 
                         <!-- the loop -->
-                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+                        <?php while ( $the_query->have_posts() ) : $the_query->the_post();
                         $image_url;
                         // Image Location.
                         if ( has_post_thumbnail() ) {
@@ -31,7 +31,7 @@
                         else {
                             $image_url = get_bloginfo('stylesheet_directory') .'/img/about.jpg"';
                         }
-                        
+
                         ?>
 
                         <div class="testimonial-item text-center">
@@ -52,7 +52,7 @@
                             <h6 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h6>
                         </div>
 
-                            
+
                         <?php endwhile; ?>
                         <!-- end of the loop -->
 
@@ -62,8 +62,8 @@
 
                     <?php else : ?>
                         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-                    <?php endif; 
-                    // End the query (for Post Loop) 
+                    <?php endif;
+                    // End the query (for Post Loop)
 
                     ?>
                     </div>
