@@ -12,7 +12,7 @@ function create_customteam_cpt() {
 		'attributes' => __( 'Custom Team Attributes', 'classicmedinova' ),
 		'parent_item_colon' => __( 'Parent Custom Team:', 'classicmedinova' ),
 		'all_items' => __( 'All Custom Teams', 'classicmedinova' ),
-		'add_new_item' => __( 'Add New Custom Team', 'classicmedinova' ),
+		'add_new_item' => __( 'Add New Team Member Name', 'classicmedinova' ),
 		'add_new' => __( 'Add New', 'classicmedinova' ),
 		'new_item' => __( 'New Custom Team', 'classicmedinova' ),
 		'edit_item' => __( 'Edit Custom Team', 'classicmedinova' ),
