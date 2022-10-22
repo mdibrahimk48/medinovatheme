@@ -428,7 +428,7 @@ function yourprefix_register_demo_metabox() {
 	) );
 
 	$cmb_demo->add_field( array(
-		'name' => esc_html__( 'Test Image', 'cmb2' ),
+		'name' => esc_html__( 'Test Image New', 'cmb2' ),
 		'desc' => esc_html__( 'Upload an image or enter a URL.', 'cmb2' ),
 		'id'   => 'yourprefix_demo_image',
 		'type' => 'file',
