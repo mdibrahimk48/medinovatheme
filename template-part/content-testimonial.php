@@ -49,9 +49,8 @@
 
                                     $icon_class = get_post_meta($postid, 'profession', true);
                                 ?>
-                            <h6 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h6>
+                            <h5 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h5>
                         </div>
-
 
                         <?php endwhile; ?>
                         <!-- end of the loop -->
