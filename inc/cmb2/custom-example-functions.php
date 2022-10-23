@@ -113,7 +113,7 @@ function yourprefix_register_demo_metabox() {
 	$cmb_demo = new_cmb2_box( array(
 		'id'            => 'yourprefix_demo_metabox',
 		'title'         => esc_html__( 'Test Metabox', 'cmb2' ),
-		'object_types'  => array( 'page' ), // Post type
+		'object_types'  => array( 'page','post', 'mdservice' ), // Post type
 		// 'show_on_cb' => 'yourprefix_show_if_front_page', // function should return a bool value
 		// 'context'    => 'normal',
 		// 'priority'   => 'high',
