@@ -131,13 +131,13 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
 
 // Custom Post 
-require_once('inc/custom-post.php');
-require_once('inc/custom-testimonial.php');
-require_once('inc/custom-team.php');
-require_once('inc/custom-shortcodes.php');
+require_once get_template_directory() .'/inc/custom-post.php';
+require_once get_template_directory() .'/inc/custom-testimonial.php';
+require_once get_template_directory() .'/inc/custom-team.php';
+require_once get_template_directory() .'/inc/custom-shortcodes.php';
 
 // CMB2
-require_once('inc/cmb2/init.php');
-require_once('inc/cmb2/custom-example-functions.php');
+require_once get_template_directory() .'/inc/cmb2/init.php';
+require_once get_template_directory() .'/inc/cmb2/custom-example-functions.php';
 
 ?>
