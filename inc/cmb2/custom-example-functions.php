@@ -158,9 +158,9 @@ function yourprefix_register_demo_metabox() {
 	) );
 
 	$cmb_demo->add_field( array(
-		'name' => esc_html__( 'Please Enter Person Designation', 'cmb2' ),
-		'desc' => esc_html__( 'Person Designation Field', 'cmb2' ),
-		'id'   => 'tdesignation',
+		'name' => esc_html__( 'Please Enter Person Company', 'classicmedinova' ),
+		'desc' => esc_html__( 'Person Company Field', 'classicmedinova' ),
+		'id'   => 'tcompany',
 		'type' => 'text',
 		// 'repeatable' => true,
 		// 'column' => array(
