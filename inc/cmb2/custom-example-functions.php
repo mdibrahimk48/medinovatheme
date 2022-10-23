@@ -113,7 +113,7 @@ function yourprefix_register_demo_metabox() {
 	$cmb_demo = new_cmb2_box( array(
 		'id'            => 'yourprefix_demo_metabox',
 		'title'         => esc_html__( 'Test Metabox', 'cmb2' ),
-		'object_types'  => array( 'page','post', 'mdservice' ), // Post type
+		'object_types'  => array( 'page','post', 'mdservice', 'customtestimonial' ), // Post type
 		// 'show_on_cb' => 'yourprefix_show_if_front_page', // function should return a bool value
 		// 'context'    => 'normal',
 		// 'priority'   => 'high',
@@ -158,10 +158,10 @@ function yourprefix_register_demo_metabox() {
 	) );
 
 	$cmb_demo->add_field( array(
-		'name' => esc_html__( 'Test Text Small', 'cmb2' ),
-		'desc' => esc_html__( 'field description (optional)', 'cmb2' ),
-		'id'   => 'yourprefix_demo_textsmall',
-		'type' => 'text_small',
+		'name' => esc_html__( 'Please Enter Person Designation', 'cmb2' ),
+		'desc' => esc_html__( 'Person Designation Field', 'cmb2' ),
+		'id'   => 'tdesignation',
+		'type' => 'text',
 		// 'repeatable' => true,
 		// 'column' => array(
 		// 	'name'     => esc_html__( 'Column Title', 'cmb2' ), // Set the admin column title
