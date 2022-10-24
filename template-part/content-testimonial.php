@@ -49,10 +49,17 @@
 
                                     $icon_class = get_post_meta($postid, 'profession', true);
                                     // CMB2 Field
-                                    $company_name = get_post_meta($postid, 'tcompany', true);
+                                    // $company_name = get_post_meta($postid, 'tcompany', true);
+                                    $entries = get_post_meta( $postid, 'tcompany', true );
+                                    if($entries){
+                                        foreach ( (array) $entries as $key ) {
+                                            ?>
+                                                <h6 class="fw-normal text-primary mb-3"><?php echo $key; ?></h6>
+                                            <?php
+                                        }
+                                    }
                                 ?>
                             <h5 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h5>
-                            <h6 class="fw-normal text-primary mb-3"><?php echo $company_name; ?></h6>
                         </div>
 
                         <?php endwhile; ?>
