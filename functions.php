@@ -139,5 +139,5 @@ require_once get_template_directory() .'/inc/custom-shortcodes.php';
 // CMB2
 require_once get_template_directory() .'/inc/cmb2/init.php';
 // require_once get_template_directory() .'/inc/cmb2/custom-example-functions.php';
-require_once get_template_directory() .'/cmb-fields.php';
+require_once get_template_directory() .'/cmb2-fields/cmb-fields.php';
 ?>
