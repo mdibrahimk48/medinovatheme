@@ -27,7 +27,9 @@ function cmb2_sample_metaboxes() {
 		'desc' => esc_html__( 'Person Company Field', 'classicmedinova' ),
 		'id'   => 'tcompany',
 		'type' => 'text',
-		// 'repeatable' => true,
+
+		//
+		'repeatable' => true,
 		// 'column' => array(
 		// 	'name'     => esc_html__( 'Column Title', 'cmb2' ), // Set the admin column title
 		// 	'position' => 2, // Set as the second column.
