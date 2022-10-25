@@ -12,7 +12,7 @@ function create_customprice_cpt() {
 		'attributes' => __( 'Custom Price Attributes', 'classicmedinova' ),
 		'parent_item_colon' => __( 'Parent Custom Price:', 'classicmedinova' ),
 		'all_items' => __( 'All Custom Prices', 'classicmedinova' ),
-		'add_new_item' => __( 'Add New Custom Price', 'classicmedinova' ),
+		'add_new_item' => __( 'Add New Custom Title', 'classicmedinova' ),
 		'add_new' => __( 'Add New', 'classicmedinova' ),
 		'new_item' => __( 'New Custom Price', 'classicmedinova' ),
 		'edit_item' => __( 'Edit Custom Price', 'classicmedinova' ),
