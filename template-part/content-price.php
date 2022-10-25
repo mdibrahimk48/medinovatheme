@@ -78,10 +78,18 @@
                                 </div>
                             </div>
                             <div class="text-center py-5">
-                                <p>Emergency Medical Treatment</p>
-                                <p>Highly Experienced Doctors</p>
-                                <p>Highest Success Rate</p>
-                                <p>Telephone Service</p>
+                            
+                            <?php
+                                // CMB2 Field Repeatable Fields
+                                $entries = get_post_meta( $postid, 'pservices', true );
+                                if($entries){
+                                    foreach ( (array) $entries as $key ) {
+                                        ?>
+                                            <p><?php echo $key; ?></p>
+                                        <?php
+                                    }
+                                }
+                            ?>
                                 <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
                             </div>
                         </div>
