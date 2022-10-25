@@ -134,6 +134,7 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 require_once get_template_directory() .'/inc/custom-post.php';
 require_once get_template_directory() .'/inc/custom-testimonial.php';
 require_once get_template_directory() .'/inc/custom-team.php';
+require_once get_template_directory() .'/inc/custom-price.php';
 require_once get_template_directory() .'/inc/custom-shortcodes.php';
 
 // CMB2
