@@ -10,7 +10,7 @@
                     // the query (for Post Loop)
 
                     $args = array(
-                        'post_type' => 'customtestimonial'
+                        'post_type' => 'customtprice'
                     );
 
                     $the_query = new WP_Query( $args ); ?>
