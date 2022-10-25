@@ -32,36 +32,6 @@
 
                         ?>
 
-                        <div class="testimonial-item text-center">
-                            <div class="position-relative mb-5">
-                                <img class="img-fluid rounded-circle mx-auto" src="<?php echo $image_url; ?>" alt="">
-                                <div class="position-absolute top-100 start-50 translate-middle d-flex align-items-center justify-content-center bg-white rounded-circle" style="width: 60px; height: 60px;">
-                                    <i class="fa fa-quote-left fa-2x text-primary"></i>
-                                </div>
-                            </div>
-                            <p class="fs-4 fw-normal"><?php the_content(); ?></p>
-                            <hr class="w-25 mx-auto">
-                            <h3><?php the_title(); ?></h3>
-                                <?php
-                                    $postid = $the_query->post->ID;
-
-                                    $icon_class = get_post_meta($postid, 'profession', true);
-                                    ?>
-                                        <h5 class="fw-normal text-primary mb-3"><?php echo $icon_class; ?></h5>
-                                    <?php
-
-                                    // CMB2 Field Repeatable Fields
-                                    $entries = get_post_meta( $postid, 'tcompany', true );
-                                    if($entries){
-                                        foreach ( (array) $entries as $key ) {
-                                            ?>
-                                                <h6 class="fw-normal text-primary mb-3"><?php echo $key; ?></h6>
-                                            <?php
-                                        }
-                                    }
-                                ?>
-                        </div>
-
                         <div class="bg-light rounded text-center">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-top" src="<?php echo $image_url; ?>" alt="">
@@ -91,6 +61,7 @@
                                 }
                             ?>
                                 <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
+                            
                             </div>
                         </div>
 
