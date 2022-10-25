@@ -13,7 +13,7 @@ function cmb2_price_metaboxes() {
 	$cmb = new_cmb2_box( array(
 		'id'            => 'price_metabox',
 		'title'         => __( 'Price Metabox', 'classicmedinova' ),
-		'object_types'  => array( 'page', 'customprice' ), // Post type
+		'object_types'  => array( 'customprice' ), // Post type
 		'context'       => 'normal',
 		'priority'      => 'high',
 		'show_names'    => true, // Show field names on the left
