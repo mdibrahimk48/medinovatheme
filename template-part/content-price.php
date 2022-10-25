@@ -10,7 +10,7 @@
                     // the query (for Post Loop)
 
                     $args = array(
-                        'post_type' => 'customtprice'
+                        'post_type' => 'customprice'
                     );
 
                     $the_query = new WP_Query( $args ); ?>
@@ -32,6 +32,8 @@
 
                         ?>
 
+                        <!-- //// -->
+
                         <div class="bg-light rounded text-center">
                             <div class="position-relative">
                                 <img class="img-fluid rounded-top" src="<?php echo $image_url; ?>" alt="">
@@ -41,14 +43,14 @@
                                     <?php
                                         $postid = $the_query->post->ID;
 
-                                        $price = get_post_meta($postid, 'price', true);
+                                        $yearly_price = get_post_meta($postid, 'price', true);
                                     ?>
-                                        <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">৳</small><?php echo $price; ?><small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
+                                        <small class="align-top fw-normal" style="font-size: 22px; line-height: 45px;">$</small><?php echo $yearly_price; ?><small class="align-bottom fw-normal" style="font-size: 16px; line-height: 40px;">/ Year</small>
                                     </h1>
                                 </div>
                             </div>
                             <div class="text-center py-5">
-                            
+
                             <?php
                                 // CMB2 Field Repeatable Fields
                                 $entries = get_post_meta( $postid, 'pservices', true );
@@ -61,9 +63,10 @@
                                 }
                             ?>
                                 <a href="" class="btn btn-primary rounded-pill py-3 px-5 my-2">Apply Now</a>
-                            
                             </div>
                         </div>
+
+
 
                         <?php endwhile; ?>
                         <!-- end of the loop -->
