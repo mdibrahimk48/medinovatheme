@@ -12,7 +12,7 @@ function create_customtoolbar_cpt() {
 		'attributes' => __( 'Custom Toolbar Attributes', 'classicmedinova' ),
 		'parent_item_colon' => __( 'Parent Custom Toolbar:', 'classicmedinova' ),
 		'all_items' => __( 'All Custom Toolbars', 'classicmedinova' ),
-		'add_new_item' => __( 'Add New Custom Toolbar', 'classicmedinova' ),
+		'add_new_item' => __( 'Add New Cell No.', 'classicmedinova' ),
 		'add_new' => __( 'Add New', 'classicmedinova' ),
 		'new_item' => __( 'New Custom Toolbar', 'classicmedinova' ),
 		'edit_item' => __( 'Edit Custom Toolbar', 'classicmedinova' ),
