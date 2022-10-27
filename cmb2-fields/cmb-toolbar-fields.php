@@ -3,6 +3,8 @@
 add_action( 'cmb2_init', 'cmb2_toolbar_metabox' );
 function cmb2_toolbar_metabox() {
 
+	$prefix = '_cmb_';
+
 	$cmb = new_cmb2_box( array(
 		'id'           => $prefix . 'toolbar_metabox',
 		'title'        => __( 'Metabox Title', 'classicmedinova' ),
