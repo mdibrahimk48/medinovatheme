@@ -9,7 +9,7 @@ $prefix = '_prefix_my_options';
 // Create options
 //
 CSF::createOptions( $prefix, array(
-  'menu_title' => 'CSF Demo',
+  'menu_title' => 'Custom Theme Options',
   'menu_slug'  => 'csf-demo',
 ) );
 
