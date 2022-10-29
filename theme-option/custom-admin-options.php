@@ -27,7 +27,7 @@ CSF::createSection( $prefix, array(
     array(
       'id'    => 'opt-cell',
       'type'  => 'text',
-      'title' => 'Cell No:',
+      'title' => 'Cell No',
     ),
 
     //
@@ -47,21 +47,21 @@ CSF::createSection( $prefix, array(
     //
 
     array(
-      'id'     => 'opt-repeater-2',
+      'id'     => 'opt-icon-class',
       'type'   => 'repeater',
-      'title'  => 'Repeater with default',
+      'title'  => 'Social Icon Class with Default',
       'fields' => array(
         array(
-          'id'    => 'opt-text',
+          'id'    => 'opt-social-icon',
           'type'  => 'text',
         ),
       ),
       'default' => array(
         array(
-          'opt-text' => 'Text default 1',
+          'opt-social-icon' => 'Text default 1',
         ),
         array(
-          'opt-text' => 'Text default 2',
+          'opt-social-icon' => 'Text default 2',
         ),
       ),
     ),
