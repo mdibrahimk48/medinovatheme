@@ -17,7 +17,7 @@ CSF::createOptions( $prefix, array(
 // Create a section
 //
 CSF::createSection( $prefix, array(
-  'title'  => 'Overview',
+  'title'  => 'Basic Theme Options',
   'icon'   => 'fas fa-rocket',
   'fields' => array(
 
