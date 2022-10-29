@@ -28,19 +28,19 @@ if(!function_exists('mymedicalservice')){
 add_action('init', 'mymedicalservice');
 
 
-function wporg_register_taxonomy_course() {
+function wporg_register_taxonomy_category() {
     $labels = array(
-        'name'              => _x( 'Courses', 'taxonomy general name' ),
-        'singular_name'     => _x( 'Course', 'taxonomy singular name' ),
-        'search_items'      => __( 'Search Courses' ),
-        'all_items'         => __( 'All Courses' ),
-        'parent_item'       => __( 'Parent Course' ),
-        'parent_item_colon' => __( 'Parent Course:' ),
-        'edit_item'         => __( 'Edit Course' ),
-        'update_item'       => __( 'Update Course' ),
-        'add_new_item'      => __( 'Add New Course' ),
-        'new_item_name'     => __( 'New Course Name' ),
-        'menu_name'         => __( 'Course' ),
+        'name'              => _x( 'Categories', 'taxonomy general name' ),
+        'singular_name'     => _x( 'Category', 'taxonomy singular name' ),
+        'search_items'      => __( 'Search Categories' ),
+        'all_items'         => __( 'All Categories' ),
+        'parent_item'       => __( 'Parent Category' ),
+        'parent_item_colon' => __( 'Parent Category:' ),
+        'edit_item'         => __( 'Edit Category' ),
+        'update_item'       => __( 'Update Category' ),
+        'add_new_item'      => __( 'Add New Category' ),
+        'new_item_name'     => __( 'New Category' ),
+        'menu_name'         => __( 'Category' ),
     );
     $args   = array(
         'hierarchical'      => true, // make it hierarchical (like categories)
@@ -48,10 +48,10 @@ function wporg_register_taxonomy_course() {
         'show_ui'           => true,
         'show_admin_column' => true,
         'query_var'         => true,
-        'rewrite'           => [ 'slug' => 'course' ],
+        'rewrite'           => [ 'slug' => 'mdservice' ],
     );
-    register_taxonomy( 'course', [ 'post' ], $args );
+    register_taxonomy( 'category', [ 'mdservice' ], $args );
 }
-add_action( 'init', 'wporg_register_taxonomy_course' );
+add_action( 'init', 'wporg_register_taxonomy_category' );
 
 ?>
