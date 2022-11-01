@@ -3,7 +3,7 @@
 //
 // Set a unique slug-like ID
 //
-$prefix = '_prefix_my_options';
+$prefix = '_prefix_my_toolbar';
 
 //
 // Create options
