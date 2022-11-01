@@ -18,7 +18,7 @@ CSF::createOptions( $prefix, array(
 //
 CSF::createSection( $prefix, array(
   'title'  => 'Toolbar Options',
-  'icon'   => 'fas fa-rocket',
+  'icon'   => 'fas fa-barcode',
   'fields' => array(
 
     //
