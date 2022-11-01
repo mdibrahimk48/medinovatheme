@@ -7,6 +7,7 @@ if(!function_exists('medinovatheme')){
     //CodeStar Framework Required
     require_once get_theme_file_path() .'/theme-option/codestar-framework.php';
     require_once get_theme_file_path() .'/theme-option/custom-admin-options.php';
+    // require_once get_theme_file_path() .'/theme-option/samples/admin-options.php';
 
     function medinovatheme(){
 	/**
