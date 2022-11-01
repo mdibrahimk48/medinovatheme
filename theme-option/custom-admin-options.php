@@ -53,19 +53,19 @@ CSF::createSection( $prefix, array(
       'button_title'  => __('Add New Social Field', 'classicmedinova'),
       'fields' => array(
         array(
-          'id'    => 'opt-text',
+          'id'    => 'opt-social-title',
           'type'  => 'text',
           'title'  => __('Social Link Title', 'classicmedinova'),
         ),
         array(
-          'id'    => 'opt-switcher',
-          'type'  => 'switcher',
-          'title' => 'Switcher',
+          'id'    => 'opt-social-icon',
+          'type'  => 'icon',
+          'title'  => __('Social Link Icon', 'classicmedinova'),
         ),
         array(
-          'id'    => 'opt-textarea',
-          'type'  => 'textarea',
-          'title' => 'Textarea',
+          'id'    => 'opt-social-url',
+          'type'  => 'text',
+          'title'  => __('Social Link URL', 'classicmedinova'),
         ),
       )
     ),
