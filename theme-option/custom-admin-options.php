@@ -45,17 +45,17 @@ CSF::createSection( $prefix, array(
 //
 // Field: group
 //
-
     ///////////////////////////////////////////////////////
     array(
-      'id'     => 'opt-group-1',
+      'id'     => 'opt-social',
       'type'   => 'group',
-      'title'  => 'Group',
+      'title'  => __('Social Link', 'classicmedinova'),
+      'button_title'  => __('Add New Social Field', 'classicmedinova'),
       'fields' => array(
         array(
           'id'    => 'opt-text',
           'type'  => 'text',
-          'title' => 'Text',
+          'title'  => __('Social Link Title', 'classicmedinova'),
         ),
         array(
           'id'    => 'opt-switcher',
