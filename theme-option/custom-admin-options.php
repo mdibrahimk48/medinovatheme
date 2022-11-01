@@ -42,31 +42,33 @@ CSF::createSection( $prefix, array(
       'validate' => 'csf_validate_email', 
     ),
 
-    //
-    // A repeater field for Social Icon
-    //
-
-    array(
-      'id'     => 'opt-social',
-      'type'   => 'repeater',
-      'title'  => 'Social Icon Class with Default',
-      'fields' => array(
-        array(
-          'id'    => 'opt-social-icon',
-          'type'  => 'text',
-        ),
-      ),
-      'default' => array(
-        array(
-          'opt-social-icon' => 'Text default 1',
-        ),
-        array(
-          'opt-social-icon' => 'Text default 2',
-        ),
-      ),
-    ),
+//
+// Field: group
+//
 
     ///////////////////////////////////////////////////////
+    array(
+      'id'     => 'opt-group-1',
+      'type'   => 'group',
+      'title'  => 'Group',
+      'fields' => array(
+        array(
+          'id'    => 'opt-text',
+          'type'  => 'text',
+          'title' => 'Text',
+        ),
+        array(
+          'id'    => 'opt-switcher',
+          'type'  => 'switcher',
+          'title' => 'Switcher',
+        ),
+        array(
+          'id'    => 'opt-textarea',
+          'type'  => 'textarea',
+          'title' => 'Textarea',
+        ),
+      )
+    ),
 
   )
 ) );
