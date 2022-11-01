@@ -47,7 +47,7 @@ CSF::createSection( $prefix, array(
     //
 
     array(
-      'id'     => 'opt-icon-class',
+      'id'     => 'opt-social',
       'type'   => 'repeater',
       'title'  => 'Social Icon Class with Default',
       'fields' => array(
@@ -65,6 +65,8 @@ CSF::createSection( $prefix, array(
         ),
       ),
     ),
+
+    ///////////////////////////////////////////////////////
 
   )
 ) );
