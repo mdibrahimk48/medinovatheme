@@ -3,9 +3,13 @@
             <div class="row">
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"></i></a>
+                        <?php
+                            $cell = get_option('_prefix_my_toolbar');
+                            $email = get_option('_prefix_my_toolbar');
+                        ?>
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"> <?php echo $cell ['opt-cell']; ?></i></a>
                         <span class="text-body">|</span>
-                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"></i></a>
+                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"> <?php echo $email ['opt-validate-email']; ?></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
