@@ -121,23 +121,22 @@ CSF::createSection( $prefix, array(
       'fields' => array(
         array(
           'type'    => 'subheading',
-          'content' => 'Copyright Section',
+          'content' => 'Developer Information Section',
         ),
         array(
-          'id'      => 'opt-sitename',
+          'id'      => 'opt-devteamname',
           'type'    => 'text',
-          'title'   => 'Site Name',
+          'title'   => 'Developer Team Name',
         ),
         array(
-          'id'      => 'opt-year',
+          'id'      => 'opt-devteamurl',
           'type'    => 'text',
-          'title'   => 'Year',
+          'title'   => 'Developer Team Site URL',
         ),
       ),
       'default' => array(
-        'opt-sitename'    => 'Medinova',
-        'opt-year'     => '2022',
-        'opt-url' => '#',
+        'opt-devteamname'    => 'Team Medinova',
+        'opt-devteamurl' => '#',
       )
     ),
 
