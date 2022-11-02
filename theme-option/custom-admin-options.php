@@ -90,10 +90,6 @@ CSF::createSection( $prefix, array(
       'title'  => 'Site Title',
       'fields' => array(
         array(
-          'type'    => 'subheading',
-          'content' => 'Copyright Section',
-        ),
-        array(
           'id'      => 'opt-sitename',
           'type'    => 'text',
           'title'   => 'Site Name',
@@ -121,10 +117,6 @@ CSF::createSection( $prefix, array(
       'type'   => 'fieldset',
       'title'  => 'Developer Team',
       'fields' => array(
-        array(
-          'type'    => 'subheading',
-          'content' => 'Developer Information Section',
-        ),
         array(
           'id'      => 'opt-devteamname',
           'type'    => 'text',
