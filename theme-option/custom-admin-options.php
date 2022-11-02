@@ -74,6 +74,49 @@ CSF::createSection( $prefix, array(
 ) );
 
 //
+// Create a section
+//
+CSF::createSection( $prefix, array(
+  'title'  => 'Footer Options',
+  'icon'   => 'far fa-clone',
+  'fields' => array(
+
+    array(
+      'id'     => 'opt-fieldset-2',
+      'type'   => 'fieldset',
+      'title'  => 'Fieldset with default',
+      'fields' => array(
+        array(
+          'type'    => 'subheading',
+          'content' => 'Title of the fieldset',
+        ),
+        array(
+          'id'      => 'opt-color',
+          'type'    => 'color',
+          'title'   => 'Color',
+        ),
+        array(
+          'id'      => 'opt-text',
+          'type'    => 'text',
+          'title'   => 'Text',
+        ),
+        array(
+          'id'      => 'opt-textarea',
+          'type'    => 'textarea',
+          'title'   => 'Textarea',
+        ),
+      ),
+      'default' => array(
+        'opt-color'    => '#1e73be',
+        'opt-text'     => 'This is text default value',
+        'opt-textarea' => 'This is textarea default value',
+      )
+    ),
+
+  )
+  ));
+
+//
 // Dependencies
 //
 CSF::createSection( $prefix, array(
