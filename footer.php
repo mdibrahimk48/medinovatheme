@@ -54,7 +54,15 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="mb-md-0">&copy; <a class="text-primary" href="#">Your Site Name</a>. All Rights Reserved.</p>
+                    <?php
+                        $sitename = get_option('_prefix_my_toolbar');
+                        $year = get_option('_prefix_my_footer');
+                        $siteurl = get_option('_prefix_my_toolbar');
+
+                        $teamname = get_option('_prefix_my_toolbar');
+                        $teamurl = get_option('_prefix_my_toolbar');
+                    ?>
+                    <p class="mb-md-0">&copy; <a class="text-primary" href="#"></a> <?php echo $year['opt-year']; ?></p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <p class="mb-0">Designed by <a class="text-primary" href="https://htmlcodex.com">HTML Codex</a></p>
