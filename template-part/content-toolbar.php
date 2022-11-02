@@ -4,20 +4,18 @@
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
                         <?php
-                            $cell = get_option('_prefix_my_toolbar');
-                            $email = get_option('_prefix_my_toolbar');
-                            $social_fields = get_option('_prefix_my_toolbar');
+                            $config = get_option('_prefix_my_toolbar');
                         ?>
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"> <?php echo $cell ['opt-cell']; ?></i></a>
+                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"> <?php echo $config ['opt-cell']; ?></i></a>
                         <span class="text-body">|</span>
-                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"> <?php echo $email ['opt-validate-email']; ?></i></a>
+                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"> <?php echo $config ['opt-validate-email']; ?></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
                     <div class="d-inline-flex align-items-center">
                         <?php
                         // Loop For Icon
-                            foreach($social_fields['opt-social'] as $social_field){
+                            foreach($config['opt-social'] as $social_field){
                                 ?>
                                     <a class="text-body px-2" href="<?php echo $social_field['opt-social-url'];?>">
                                         <i class="<?php echo $social_field['opt-social-icon'];?>"></i>
