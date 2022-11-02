@@ -77,6 +77,8 @@ CSF::createSection( $prefix, array(
 //
 // Field: fieldset
 //
+
+
 CSF::createSection( $prefix, array(
   'title'  => 'Footer Options',
   'icon'   => 'far fa-clone',
@@ -136,7 +138,7 @@ CSF::createSection( $prefix, array(
       ),
       'default' => array(
         'opt-devteamname'    => 'Team Medinova',
-        'opt-devteamurl' => '#',
+        'opt-devteamurl'     => '#',
       )
     ),
 
