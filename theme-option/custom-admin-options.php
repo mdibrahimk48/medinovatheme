@@ -73,8 +73,9 @@ CSF::createSection( $prefix, array(
   )
 ) );
 
+
 //
-// Create a section
+// Field: fieldset
 //
 CSF::createSection( $prefix, array(
   'title'  => 'Footer Options',
@@ -82,34 +83,61 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-fieldset-2',
+      'id'     => 'opt-footer-copyright',
       'type'   => 'fieldset',
-      'title'  => 'Fieldset with default',
+      'title'  => 'Site Title',
       'fields' => array(
         array(
           'type'    => 'subheading',
-          'content' => 'Title of the fieldset',
+          'content' => 'Copyright Section',
         ),
         array(
-          'id'      => 'opt-color',
-          'type'    => 'color',
-          'title'   => 'Color',
-        ),
-        array(
-          'id'      => 'opt-text',
+          'id'      => 'opt-sitename',
           'type'    => 'text',
-          'title'   => 'Text',
+          'title'   => 'Site Name',
         ),
         array(
-          'id'      => 'opt-textarea',
-          'type'    => 'textarea',
-          'title'   => 'Textarea',
+          'id'      => 'opt-year',
+          'type'    => 'text',
+          'title'   => 'Year',
+        ),
+        array(
+          'id'      => 'opt-url',
+          'type'    => 'text',
+          'title'   => 'Site URL',
         ),
       ),
       'default' => array(
-        'opt-color'    => '#1e73be',
-        'opt-text'     => 'This is text default value',
-        'opt-textarea' => 'This is textarea default value',
+        'opt-sitename'    => 'Medinova',
+        'opt-year'     => '2022',
+        'opt-url' => '#',
+      )
+    ),
+
+    array(
+      'id'     => 'opt-footer-team',
+      'type'   => 'fieldset',
+      'title'  => 'Developer Team',
+      'fields' => array(
+        array(
+          'type'    => 'subheading',
+          'content' => 'Copyright Section',
+        ),
+        array(
+          'id'      => 'opt-sitename',
+          'type'    => 'text',
+          'title'   => 'Site Name',
+        ),
+        array(
+          'id'      => 'opt-year',
+          'type'    => 'text',
+          'title'   => 'Year',
+        ),
+      ),
+      'default' => array(
+        'opt-sitename'    => 'Medinova',
+        'opt-year'     => '2022',
+        'opt-url' => '#',
       )
     ),
 
