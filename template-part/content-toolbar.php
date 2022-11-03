@@ -15,6 +15,7 @@
                     <div class="d-inline-flex align-items-center">
                         <?php
                         // Loop For Icon
+                        if($config['opt-social']){
                             foreach($config['opt-social'] as $social_field){
                                 ?>
                                     <a class="text-body px-2" href="<?php echo $social_field['opt-social-url'];?>">
@@ -22,6 +23,7 @@
                                     </a>
                                 <?php
                             }
+                        }
                         ?>
                     </div>
                 </div>
