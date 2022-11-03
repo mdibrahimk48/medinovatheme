@@ -57,7 +57,6 @@
                     <?php
                         $config = get_option('_prefix_my_toolbar');
                         $string_converter_copyright = $config['opt-footer-copyright'];
-                        var_dump($string_converter_copyright);
                         $string_converter_dev = $config['opt-footer-team'];
                     ?>
                     <p class="mb-md-0">&copy; <a class="text-primary" href="#"><?php echo $string_converter_copyright['opt-sitename']; ?></a> <?php echo $string_converter_copyright['opt-year']; ?></p>
