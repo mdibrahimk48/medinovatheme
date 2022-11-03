@@ -81,8 +81,9 @@ CSF::createSection( $prefix, array(
   'title'  => 'Site Name Options',
   'icon'   => 'fas fa-code',
   'fields' => array(
+
     array(
-      'id'     => 'opt-site-name',
+      'id'     => 'opt-site-details',
       'type'   => 'fieldset',
       'title'  => 'Site Name',
       'fields' => array(
@@ -101,17 +102,12 @@ CSF::createSection( $prefix, array(
           'type'    => 'text',
           'title'   => 'Site URL',
         ),
-        array(
-          'id'      => 'opt-sitetitle',
-          'type'    => 'text',
-          'title'   => 'Site Title',
-        ),
       ),
       'default' => array(
         'opt-siteicon'              => 'fas fa-hand-holding-medical',
         'opt-customsitename'        => 'Medinova',
         'opt-customurl'             => '#',
-        'opt-sitetitle'             => 'MEDINOVA - Hospital Website Template',
+        'opt-customtitle'             => 'MEDINOVA - Hospital Website Template',
       )
     ),
 
