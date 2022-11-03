@@ -55,7 +55,7 @@
             <div class="row g-5">
                 <div class="col-md-6 text-center text-md-start">
                     <?php
-                        $config = get_option('_prefix_my_toolbar');
+                        $config = get_option('_prefix_my_options');
                         $string_converter_copyright = $config['opt-footer-copyright'];
                         $string_converter_dev = $config['opt-footer-team'];
                     ?>
