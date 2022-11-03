@@ -1,7 +1,10 @@
     <div class="container-fluid sticky-top bg-white shadow-sm">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-                
+                <?php
+                    $config = get_option('_prefix_my_options');
+                    $string_converter_sitename = $config['opt-site-name'];
+                ?>
                 <a href="index.html" class="navbar-brand">
                     <h1 class="m-0 text-uppercase text-primary"><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
                 </a>
