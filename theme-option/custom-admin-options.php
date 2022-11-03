@@ -3,7 +3,7 @@
 //
 // Set a unique slug-like ID
 //
-$prefix = '_prefix_my_toolbar';
+$prefix = '_prefix_my_options';
 
 //
 // Create options
@@ -73,6 +73,39 @@ CSF::createSection( $prefix, array(
   )
 ) );
 
+
+//
+// Create Title & Name
+//
+CSF::createSection( $prefix, array(
+  'title'  => 'Site Name Options',
+  'icon'   => 'fas fa-code',
+  'fields' => array(
+
+    array(
+      'id'     => 'opt-site-name',
+      'type'   => 'fieldset',
+      'title'  => 'Site Name',
+      'fields' => array(
+        array(
+          'id'      => 'opt-siteicon',
+          'type'    => 'icon',
+          'title'   => 'Select Site Icon',
+        ),
+        array(
+          'id'      => 'opt-customsitename',
+          'type'    => 'text',
+          'title'   => 'Site Name',
+        ),
+      ),
+      'default' => array(
+        'opt-siteicon'           => 'fas fa-hand-holding-medical',
+        'opt-customsitename'     => 'Medinova',
+      )
+    ),
+
+  )
+) );
 
 //
 // Field: fieldset
