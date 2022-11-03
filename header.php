@@ -11,7 +11,6 @@
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-
     <?php wp_head(); ?>
 
 
