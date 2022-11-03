@@ -1,12 +1,12 @@
     <div class="container-fluid sticky-top bg-white shadow-sm">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
-                <?php
-                    $config = get_option('_prefix_my_options');
-                    $string_converter_sitename = $config['opt-site-name'];
-                ?>
-                <a href="<?php echo $string_converter_sitename['opt-customurl']; ?>" class="navbar-brand">
-                    <h1 class="m-0 text-uppercase text-primary"><i class="<?php echo $string_converter_sitename['opt-siteicon']; ?>"></i> <?php echo $string_converter_sitename['opt-customsitename']; ?></h1>
+                    <?php
+                        $config = get_option('_prefix_my_options');
+                        $string_converter_site_details = $config['opt-site-details'];
+                    ?>
+                <a href="<?php echo $string_converter_site_details['opt-customurl']; ?>" class="navbar-brand">
+                    <h1 class="m-0 text-uppercase text-primary"><i class="<?php echo $string_converter_site_details['opt-siteicon']; ?>"></i> <?php echo $string_converter_site_details['opt-customsitename']; ?></h1>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
