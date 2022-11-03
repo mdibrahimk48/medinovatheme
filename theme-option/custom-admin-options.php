@@ -81,9 +81,6 @@ CSF::createSection( $prefix, array(
   'title'  => 'Site Name Options',
   'icon'   => 'fas fa-code',
   'fields' => array(
-
-
-
     array(
       'id'     => 'opt-site-name',
       'type'   => 'fieldset',
