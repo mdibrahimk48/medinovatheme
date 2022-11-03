@@ -101,11 +101,17 @@ CSF::createSection( $prefix, array(
           'type'    => 'text',
           'title'   => 'Site URL',
         ),
+        array(
+          'id'      => 'opt-sitetitle',
+          'type'    => 'text',
+          'title'   => 'Site Title',
+        ),
       ),
       'default' => array(
-        'opt-siteicon'              => 'Medinova',
-        'opt-customsitename'        => '2022',
+        'opt-siteicon'              => 'fas fa-hand-holding-medical',
+        'opt-customsitename'        => 'Medinova',
         'opt-customurl'             => '#',
+        'opt-sitetitle'             => 'MEDINOVA - Hospital Website Template',
       )
     ),
 
