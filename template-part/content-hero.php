@@ -12,3 +12,10 @@
             </div>
         </div>
     </div>
+
+<style>
+    .hero-header{
+        background-image: url(img/hero.jpg) top right no-repeat !important;
+        background-size: cover;
+    }
+</style>
