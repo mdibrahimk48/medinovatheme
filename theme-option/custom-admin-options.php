@@ -102,6 +102,11 @@ CSF::createSection( $prefix, array(
           'type'    => 'text',
           'title'   => 'Site URL',
         ),
+        array(
+          'id'      => 'opt-customtitle',
+          'type'    => 'text',
+          'title'   => 'Site Title',
+        ),
       ),
       'default' => array(
         'opt-siteicon'              => 'fas fa-hand-holding-medical',
