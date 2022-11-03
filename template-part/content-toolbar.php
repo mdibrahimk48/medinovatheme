@@ -4,7 +4,7 @@
                 <div class="col-md-6 text-center text-lg-start mb-2 mb-lg-0">
                     <div class="d-inline-flex align-items-center">
                         <?php
-                            $config = get_option('_prefix_my_toolbar');
+                            $config = get_option('_prefix_my_options');
                         ?>
                         <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"> <?php echo $config ['opt-cell']; ?></i></a>
                         <span class="text-body">|</span>
