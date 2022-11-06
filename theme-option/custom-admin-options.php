@@ -14,7 +14,7 @@ CSF::createOptions( $prefix, array(
 ) );
 
 //
-// Create a section
+// Create a section Toollbar
 //
 CSF::createSection( $prefix, array(
   'title'  => 'Toolbar Options',
@@ -43,9 +43,9 @@ CSF::createSection( $prefix, array(
     ),
 
 //
-// Field: group
+// Field: group Toolbar
 //
-    ///////////////////////////////////////////////////////
+
     array(
       'id'     => 'opt-social',
       'type'   => 'group',
@@ -119,8 +119,55 @@ CSF::createSection( $prefix, array(
   )
 ) );
 
+
 //
-// Field: fieldset
+// Create About Section
+//
+CSF::createSection( $prefix, array(
+  'title'  => 'About Section',
+  'icon'   => 'fab fa-servicestack',
+  'fields' => array(
+
+    array(
+      'id'     => 'opt-site-details',
+      'type'   => 'fieldset',
+      'title'  => 'Site Name',
+      'fields' => array(
+        array(
+          'id'      => 'opt-siteicon',
+          'type'    => 'icon',
+          'title'   => 'Select Site Icon',
+        ),
+        array(
+          'id'      => 'opt-customsitename',
+          'type'    => 'text',
+          'title'   => 'Site Name',
+        ),
+        array(
+          'id'      => 'opt-customurl',
+          'type'    => 'text',
+          'title'   => 'Site URL',
+        ),
+        array(
+          'id'      => 'opt-customtitle',
+          'type'    => 'text',
+          'title'   => 'Site Title',
+        ),
+      ),
+      'default' => array(
+        'opt-siteicon'              => 'fas fa-hand-holding-medical',
+        'opt-customsitename'        => 'Medinova',
+        'opt-customurl'             => '#',
+        'opt-customtitle'             => 'MEDINOVA - Hospital Website Template',
+      )
+    ),
+
+  )
+) );
+
+
+//
+// Field: fieldset Footer
 //
 
 
