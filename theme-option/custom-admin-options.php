@@ -129,36 +129,35 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-site-details',
+      'id'     => 'opt-about-details',
       'type'   => 'fieldset',
-      'title'  => 'Site Name',
+      'title'  => 'About Section',
       'fields' => array(
         array(
-          'id'      => 'opt-siteicon',
-          'type'    => 'icon',
-          'title'   => 'Select Site Icon',
+          'id'      => 'opt-aboutimage',
+          'type'    => 'media',
+          'title'   => 'Insert About Image',
         ),
         array(
-          'id'      => 'opt-customsitename',
+          'id'      => 'opt-abouttitle',
           'type'    => 'text',
-          'title'   => 'Site Name',
+          'title'   => 'About Title',
         ),
         array(
-          'id'      => 'opt-customurl',
+          'id'      => 'opt-aboutheading',
           'type'    => 'text',
-          'title'   => 'Site URL',
+          'title'   => 'About Heading',
         ),
         array(
-          'id'      => 'opt-customtitle',
-          'type'    => 'text',
-          'title'   => 'Site Title',
+          'id'      => 'opt-aboutdescription',
+          'type'    => 'textarea',
+          'title'   => 'About Description',
         ),
       ),
       'default' => array(
-        'opt-siteicon'              => 'fas fa-hand-holding-medical',
-        'opt-customsitename'        => 'Medinova',
-        'opt-customurl'             => '#',
-        'opt-customtitle'             => 'MEDINOVA - Hospital Website Template',
+        'opt-abouttitle'              => 'ABOUT US',
+        'opt-aboutheading'            => 'Best Medical Care For Yourself and Your Family',
+        'opt-aboutdescription'        => 'Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna',
       )
     ),
 
