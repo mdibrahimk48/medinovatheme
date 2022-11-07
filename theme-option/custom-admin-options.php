@@ -161,6 +161,34 @@ CSF::createSection( $prefix, array(
       )
     ),
 
+    //
+// Field: group Toolbar
+//
+
+array(
+  'id'     => 'opt-social',
+  'type'   => 'group',
+  'title'  => __('Social Link', 'classicmedinova'),
+  'button_title'  => __('Add New Social Field', 'classicmedinova'),
+  'fields' => array(
+    array(
+      'id'    => 'opt-social-title',
+      'type'  => 'text',
+      'title'  => __('Social Link Title', 'classicmedinova'),
+    ),
+    array(
+      'id'    => 'opt-social-icon',
+      'type'  => 'icon',
+      'title'  => __('Social Link Icon', 'classicmedinova'),
+    ),
+    array(
+      'id'    => 'opt-social-url',
+      'type'  => 'text',
+      'title'  => __('Social Link URL', 'classicmedinova'),
+    ),
+  )
+),
+
   )
 ) );
 
