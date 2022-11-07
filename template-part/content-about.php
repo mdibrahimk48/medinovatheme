@@ -6,6 +6,7 @@
                         <?php
                             $config = get_option('_prefix_my_options');
                             $string_converter_about = $config['opt-about-details'];
+                            $string_converter_about_services = $config['opt-aboutservicefield'];
                         ?>
                         <img class="position-absolute w-100 h-100 rounded" src="<?php echo $string_converter_about['opt-aboutimage']['url']; ?>" style="object-fit: cover;">
                     </div>
@@ -17,6 +18,20 @@
                     </div>
                     <p><?php echo $string_converter_about['opt-aboutdescription']; ?></p>
                     <div class="row g-3 pt-3">
+
+                    <!-- Group Fields in CodeStar Framework -->
+                    <?php
+                        foreach($config['opt-aboutservicefield'] as $about_field){
+                        ?>
+                            <div class="col-sm-3 col-6">
+                                <div class="bg-light text-center rounded-circle py-4">
+                                    <i class="<?php echo $about_field['opt-about-icon-class']; ?>"></i>
+                                    <h6 class="mb-0"><?php echo $about_field['opt-about-title1']; ?><small class="d-block text-primary"><?php echo $about_field['opt-about-title2']; ?></small></h6>
+                                </div>
+                            </div>
+                        <?php
+                        }
+                    ?>
                         <!-- <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
                                 <i class="fa fa-3x fa-user-md text-primary mb-3"></i>
