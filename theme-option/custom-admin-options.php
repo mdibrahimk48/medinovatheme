@@ -162,32 +162,37 @@ CSF::createSection( $prefix, array(
     ),
 
     //
-// Field: group Toolbar
-//
+    // Field: group Toolbar
+    //
 
-array(
-  'id'     => 'opt-social',
-  'type'   => 'group',
-  'title'  => __('Social Link', 'classicmedinova'),
-  'button_title'  => __('Add New Social Field', 'classicmedinova'),
-  'fields' => array(
     array(
-      'id'    => 'opt-social-title',
-      'type'  => 'text',
-      'title'  => __('Social Link Title', 'classicmedinova'),
+      'id'     => 'opt-aboutservicefield',
+      'type'   => 'group',
+      'title'  => __('Social Link', 'classicmedinova'),
+      'button_title'  => __('Add New Social Field', 'classicmedinova'),
+      'fields' => array(
+        array(
+          'id'    => 'opt-about-service-title',
+          'type'  => 'text',
+          'title'  => __('Field No', 'classicmedinova'),
+        ),
+        array(
+          'id'    => 'opt-about-icon-class',
+          'type'  => 'text',
+          'title'  => __('Icon Class', 'classicmedinova'),
+        ),
+        array(
+          'id'    => 'opt-about-title1',
+          'type'  => 'text',
+          'title'  => __('Title 1', 'classicmedinova'),
+        ),
+        array(
+          'id'    => 'opt-about-title2',
+          'type'  => 'text',
+          'title'  => __('Title 2', 'classicmedinova'),
+        ),
+      )
     ),
-    array(
-      'id'    => 'opt-social-icon',
-      'type'  => 'icon',
-      'title'  => __('Social Link Icon', 'classicmedinova'),
-    ),
-    array(
-      'id'    => 'opt-social-url',
-      'type'  => 'text',
-      'title'  => __('Social Link URL', 'classicmedinova'),
-    ),
-  )
-),
 
   )
 ) );
