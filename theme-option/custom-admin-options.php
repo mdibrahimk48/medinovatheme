@@ -162,7 +162,7 @@ CSF::createSection( $prefix, array(
     ),
 
     //
-    // Field: group Toolbar
+    // Field: group About
     //
 
     array(
