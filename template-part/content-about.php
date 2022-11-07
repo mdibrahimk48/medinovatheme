@@ -21,15 +21,17 @@
 
                     <!-- Group Fields in CodeStar Framework -->
                     <?php
-                        foreach($config['opt-aboutservicefield'] as $about_field){
-                        ?>
-                            <div class="col-sm-3 col-6">
-                                <div class="bg-light text-center rounded-circle py-4">
-                                    <i class="<?php echo $about_field['opt-about-icon-class']; ?>"></i>
-                                    <h6 class="mb-0"><?php echo $about_field['opt-about-title1']; ?><small class="d-block text-primary"><?php echo $about_field['opt-about-title2']; ?></small></h6>
+                        if($config['opt-aboutservicefield']){
+                            foreach($config['opt-aboutservicefield'] as $about_field){
+                            ?>
+                                <div class="col-sm-3 col-6">
+                                    <div class="bg-light text-center rounded-circle py-4">
+                                        <i class="<?php echo $about_field['opt-about-icon-class']; ?>"></i>
+                                        <h6 class="mb-0"><?php echo $about_field['opt-about-title1']; ?><small class="d-block text-primary"><?php echo $about_field['opt-about-title2']; ?></small></h6>
+                                    </div>
                                 </div>
-                            </div>
-                        <?php
+                            <?php
+                            }
                         }
                     ?>
                         <!-- <div class="col-sm-3 col-6">
