@@ -149,4 +149,8 @@ require_once get_template_directory() .'/inc/cmb2/init.php';
 require_once get_template_directory() .'/cmb2-fields/cmb-fields.php';
 require_once get_template_directory() .'/cmb2-fields/cmb-price-fields.php';
 require_once get_template_directory() .'/cmb2-fields/cmb-toolbar-fields.php';
+
+//Footer Widgets
+require_once get_template_directory() .'/footer-widgets.php';
+
 ?>
