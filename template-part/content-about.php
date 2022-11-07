@@ -12,10 +12,10 @@
                 </div>
                 <div class="col-lg-7">
                     <div class="mb-4">
-                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5">About Us</h5>
-                        <h1 class="display-4">Best Medical Care For Yourself and Your Family</h1>
+                        <h5 class="d-inline-block text-primary text-uppercase border-bottom border-5"><?php echo $string_converter_about['opt-abouttitle']; ?></h5>
+                        <h1 class="display-4"><?php echo $string_converter_about['opt-aboutheading']; ?></h1>
                     </div>
-                    <p>Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna</p>
+                    <p><?php echo $string_converter_about['opt-aboutdescription']; ?></p>
                     <div class="row g-3 pt-3">
                         <!-- <div class="col-sm-3 col-6">
                             <div class="bg-light text-center rounded-circle py-4">
