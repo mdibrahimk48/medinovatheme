@@ -42,16 +42,26 @@
                                         <h3><?php the_title(); ?></h3>
                                         <?php
                                             $postid = $the_query->post->ID;
-
                                             $profession = get_post_meta($postid, 'profession', true);
+
+                                            $groupentries = get_post_meta( $postid, 'cteam', true );
                                         ?>
                                         <h6 class="fw-normal fst-italic text-primary mb-4"><?php echo $profession; ?></h6>
                                         <p class="m-0"><?php the_content(); ?></p>
                                     </div>
                                     <div class="d-flex mt-auto border-top p-4">
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-twitter"></i></a>
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                        <?php
+                                    // CMB2 Field Repeatable Fields
+                                if($groupentries){
+                                    foreach ( (array) $groupentries as $key ) {
+                                        ?>
+                                            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="<?php echo $key['iconurl'];?>"><i class="<?php echo $key['iconclass'];?>"></i></a>
+                                        <?php
+                                    }
+                                }
+                                ?>
+                                        <!-- <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-3" href="#"><i class="fab fa-facebook-f"></i></a>
+                                        <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a> -->
                                     </div>
                                 </div>
                             </div>
