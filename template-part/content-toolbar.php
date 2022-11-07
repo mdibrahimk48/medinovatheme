@@ -6,9 +6,9 @@
                         <?php
                             $config = get_option('_prefix_my_options');
                         ?>
-                        <a class="text-decoration-none text-body pe-3" href=""><i class="bi bi-telephone me-2"> <?php echo $config ['opt-cell']; ?></i></a>
+                        <a class="text-decoration-none text-body pe-3" href="tel:<?php echo $config ['opt-cell']; ?>"><i class="bi bi-telephone me-2"> <?php echo $config ['opt-cell']; ?></i></a>
                         <span class="text-body">|</span>
-                        <a class="text-decoration-none text-body px-3" href=""><i class="bi bi-envelope me-2"> <?php echo $config ['opt-validate-email']; ?></i></a>
+                        <a class="text-decoration-none text-body px-3" href="mailto:<?php echo $config ['opt-validate-email']; ?>"><i class="bi bi-envelope me-2"> <?php echo $config ['opt-validate-email']; ?></i></a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-end">
