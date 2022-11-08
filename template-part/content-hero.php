@@ -1,4 +1,4 @@
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
+    <div class="container-fluid bg-primary py-5 mb-5 hero-header" style="background-image: url(img/hero.jpg) top right no-repeat;">
         <div class="container py-5">
             <div class="row justify-content-start">
                 <div class="col-lg-8 text-center text-lg-start">
@@ -12,3 +12,4 @@
             </div>
         </div>
     </div>
+    
