@@ -27,7 +27,6 @@ function cmb2_sample_metaboxes() {
 		'desc' => esc_html__( 'Person Company Field', 'classicmedinova' ),
 		'id'   => 'tcompany',
 		'type' => 'text',
-		dfgdgd
 
 		//
 		'repeatable' => true,
