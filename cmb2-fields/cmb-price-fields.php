@@ -3,7 +3,7 @@
 add_action( 'cmb2_admin_init', 'cmb2_price_metaboxes' );
 /**
  * Define the metabox and field configurations.
- */
+*/
 
 
 function cmb2_price_metaboxes() {

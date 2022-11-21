@@ -244,3 +244,6 @@
     height: 150px;
 }
 
+.signle_page_title {
+    display: flex;
+}
